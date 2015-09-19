@@ -5,9 +5,21 @@
 {% block body_class %}template-blogpage{% endblock %}
 
 {% block content %}
-    <h1>{{ self.title }}</h1>
-
-    <div style="width:500px;">
-        {{ self.description|richtext }}    
+    <div class="hero" style="background-image:url();">
     </div>
+
+    <div class="entry">
+        <h1>{{ self.title }}</h1>
+
+        <div>
+            {{ self.description|richtext }}
+        </div>
+
+        <ul class="authors">
+            <li>
+                <a href="#"><img src="http://www.realtimearts.net/data/images/art/46/4640_profile_nilssonpolias.jpg" alt="" /></a>
+            </li>
+        </ul>
+    </div>
+
 {% endblock %}

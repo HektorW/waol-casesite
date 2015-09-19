@@ -6,9 +6,11 @@
     <h1>Welcome to wAoL case site!</h1>
 
     {% if self.cases %}
-        <ul>
+        <ul class="caselist">
             {% for item in self.cases %}
-                <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+                <li class="caselist__item">
+                    <a href="{{ item.url }}">{{ item.title }}</a>
+                </li>
             {% endfor %}
         </ul>
     {% endif %}
