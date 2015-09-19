@@ -3,7 +3,7 @@
 {% block body_class %}template-{{ self.get_verbose_name|slugify }}{% endblock %}
 
 {% block content %}
-    <h1>Welcome to wAoL case site!</h1>
+    <h1>{{ self.heading }}</h1>
 
     {% if self.cases %}
         <ul class="caselist">
