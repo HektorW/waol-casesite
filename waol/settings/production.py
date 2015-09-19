@@ -3,6 +3,13 @@ from .base import *
 import dj_database_url
 
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'waol_db',
+    }
+}
+
 
 DEBUG = False
 TEMPLATE_DEBUG = False
